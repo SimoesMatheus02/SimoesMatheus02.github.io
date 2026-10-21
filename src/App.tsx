@@ -1,4 +1,5 @@
 import { Header } from './components/Header'
+import certificateImage from './assets/DIO-GFT-JAVA.png'
 
 function App() {
   return (
@@ -19,8 +20,8 @@ function App() {
           </ul>
         </div>
       </div>
-      <h1 className="text-4xl font-bold text-center mt-8">Projetos:</h1>
-      <div id="Projetos" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div id="Projects" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <h1 className="text-4xl font-bold text-center mt-8 col-span-full">Projetos:</h1>
         <div id="ExerciciosDB" className="text-center max-w-xl ml-8 mt-6">
         <h2 className="text-2xl font-bold text-blue-500">Exercícios DB</h2>
         <p>Banco de dados com exercícios catalogados por filtros, contendo uma animação 3D para visualização da execução do exercício. Pode ser usado com um app de montar treino</p>
@@ -32,6 +33,30 @@ function App() {
               title="Exercícios DB Preview"
               loading="lazy"
             />
+          </div>
+        </div>
+      </div>
+      <div id="Certificates" className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <h1 className="text-4xl font-bold text-center col-span-full">Certificados e Cursos:</h1>
+        <div className="p-6 border border-gray-300 rounded-lg">
+          <h2 className="text-2xl font-bold text-blue-500">GFT Java - DIO</h2>
+          <p className="text-gray-600 mt-1">Certificado de conclusão do curso de Java</p>
+          <div className="mt-4 border border-gray-300 rounded-lg overflow-hidden">
+            <img
+              src={certificateImage}
+              alt="GFT Java Certificate"
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="flex gap-4 justify-center mt-4">
+            <a
+              href="/DIO-GFT-JAVA.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline font-medium"
+            >
+              Visualizar PDF
+            </a>
           </div>
         </div>
       </div>
