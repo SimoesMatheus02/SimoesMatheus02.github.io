@@ -1,5 +1,6 @@
 import { Header } from './components/Header'
 import { Certificate } from './components/Certificate'
+import { TranscriptionSpeech } from './components/TranscriptionSpeech'
 import certificateImage from './assets/DIO-GFT-JAVA.png'
 import itauCertificateImage from './assets/DIO-ITAU-JAVA.png'
 
@@ -31,10 +32,18 @@ function App() {
           <div className="mt-4 border border-gray-300 rounded-lg overflow-hidden">
             <iframe
               src="https://exercicios-db-two.vercel.app/"
-              className="w-full h-auto"
+              className="w-full h-[600px]"
               title="Exercícios DB Preview"
               loading="lazy"
             />
+          </div>
+        </div>
+        <div id="TranscriptionSpeech" className="p-6 border border-gray-300 rounded-lg">
+          <h2 className="text-2xl font-bold text-blue-500">Transcription and Speech API</h2>
+          <p>API para transcrição de áudio em texto e conversão de texto em áudio usando inteligência artificial. Desenvolvido durante o Bootcamp Itau Java com IA da DIO.</p>
+          <p><a href="https://github.com/SimoesMatheus02/Transcription-and-Speech-API" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-medium">https://github.com/SimoesMatheus02/Transcription-and-Speech-API</a></p>
+          <div className="mt-4">
+            <TranscriptionSpeech />
           </div>
         </div>
       </div>
