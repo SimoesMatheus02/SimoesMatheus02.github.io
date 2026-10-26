@@ -1,5 +1,7 @@
 import { Header } from './components/Header'
+import { Certificate } from './components/Certificate'
 import certificateImage from './assets/DIO-GFT-JAVA.png'
+import itauCertificateImage from './assets/DIO-ITAU-JAVA.png'
 
 function App() {
   return (
@@ -20,45 +22,38 @@ function App() {
           </ul>
         </div>
       </div>
-      <div id="Projects" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div id="Projects" className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-2">
         <h1 className="text-4xl font-bold text-center mt-8 col-span-full">Projetos:</h1>
-        <div id="ExerciciosDB" className="text-center max-w-xl ml-8 mt-6">
+        <div id="ExerciciosDB" className="p-6 border border-gray-300 rounded-lg">
         <h2 className="text-2xl font-bold text-blue-500">Exercícios DB</h2>
         <p>Banco de dados com exercícios catalogados por filtros, contendo uma animação 3D para visualização da execução do exercício. Pode ser usado com um app de montar treino</p>
         <p><a href="https://exercicios-db-two.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-medium">https://exercicios-db-two.vercel.app/</a></p>
           <div className="mt-4 border border-gray-300 rounded-lg overflow-hidden">
             <iframe
               src="https://exercicios-db-two.vercel.app/"
-              className="w-full h-96"
+              className="w-full h-auto"
               title="Exercícios DB Preview"
               loading="lazy"
             />
           </div>
         </div>
       </div>
-      <div id="Certificates" className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      <div id="Certificates" className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 mx-2">
         <h1 className="text-4xl font-bold text-center col-span-full">Certificados e Cursos:</h1>
-        <div className="p-6 border border-gray-300 rounded-lg">
-          <h2 className="text-2xl font-bold text-blue-500">GFT Java - DIO</h2>
-          <p className="text-gray-600 mt-1">Certificado de conclusão do curso de Java</p>
-          <div className="mt-4 border border-gray-300 rounded-lg overflow-hidden">
-            <img
-              src={certificateImage}
-              alt="GFT Java Certificate"
-              className="w-full h-auto"
-            />
-          </div>
-          <div className="flex gap-4 justify-center mt-4">
-            <a
-              href="/DIO-GFT-JAVA.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 underline font-medium"
-            >
-              Visualizar PDF
-            </a>
-          </div>
-        </div>
+        <Certificate
+          title="GFT Start #4 Java - DIO"
+          description="Certificado de conclusão do curso de Java"
+          image={certificateImage}
+          pdfUrl="/DIO-GFT-JAVA.pdf"
+          alt="GFT Java Certificate"
+        />
+        <Certificate
+          title="Itau Java com I.A. - DIO"
+          description="Certificado de conclusão do curso de Java"
+          image={itauCertificateImage}
+          pdfUrl="/DIO--ITAU-JAVA.pdf"
+          alt="Itau Java Certificate"
+        />
       </div>
     </div>
   )
