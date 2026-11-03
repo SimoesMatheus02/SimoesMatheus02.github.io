@@ -42,6 +42,7 @@ function App() {
           <h2 className="text-2xl font-bold text-blue-500">Transcription and Speech API</h2>
           <p>API para transcrição de áudio em texto e conversão de texto em áudio usando inteligência artificial. Desenvolvido durante o Bootcamp Itau Java com IA da DIO.</p>
           <p>DEPLOY NO RENDER</p>
+          <p>*A API PODE DEMORAR ATÉ 1 MINUTO PARA ACORDAR*</p>
           <p><a href="https://github.com/SimoesMatheus02/Transcription-and-Speech-API" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-medium">https://github.com/SimoesMatheus02/Transcription-and-Speech-API</a></p>
           <div className="mt-4">
             <TranscriptionSpeech />
