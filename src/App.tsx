@@ -3,6 +3,7 @@ import { Certificate } from './components/Certificate'
 import { TranscriptionSpeech } from './components/TranscriptionSpeech'
 import certificateImage from './assets/DIO-GFT-JAVA.png'
 import itauCertificateImage from './assets/DIO-ITAU-JAVA.png'
+import dxcCertificateImage from './assets/DXC.png'
 
 function App() {
   return (
@@ -64,6 +65,13 @@ function App() {
           image={itauCertificateImage}
           pdfUrl="/DIO--ITAU-JAVA.pdf"
           alt="Itau Java Certificate"
+        />
+        <Certificate
+          title="DXC Technology I.A do zero ao primeiro agente - DIO"
+          description="Certificado de conclusão do curso"
+          image={dxcCertificateImage}
+          pdfUrl="/dxc.pdf"
+          alt="DXC Certificate"
         />
       </div>
     </div>
